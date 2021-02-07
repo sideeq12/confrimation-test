@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <!-- bostrap cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Confirmation test</title>
+
+    <!-- internal css -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="menu">
+     <nav>Company</nav>
+     <ul>
+         <li>About</a>
+            <div class="sub-menu">
+                <ul>
+                    <li>History</li>
+                    <li>Vission mission</li>
+                </ul>
+            </div>
+        </li>
+         <li>Our works</li>
+         <li>Our team</li>
+         <li>Contact</li>
+     </ul>
+    </div>
+    
+
+    <!-- slideshow -->
+    <div class="slideshow">
+        <div class="images">
+            <div class="slide"><img src="images/bg.jpg" alt="" class="image1"></div>
+            <div class="slide"><img src="images/about-bg.jpg" alt="" class="image2"></div>
+        </div>
+                <div class="arrow">></div>
+                <div class="arrow1"><</div>
+    </div>
+
+
+    <script>
+        $(document).ready(function(){
+            $(".arrow").click(function(){
+                $(".image1").css("marginLeft", "-100%")
+                $(".image2").css("marginLeft", "-100%") }) 
+            $(".arrow1").click(function(){
+                
+        })
+        })
+    </script>
+</body>
+</html>
