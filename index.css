@@ -97,6 +97,7 @@ body{
     position: absolute;
     font-size: 20px;
     bottom: 3%;
+    font-weight: bold;
     left: 10%;
     background-color: rgba(0, 0, 0, 0.555);
     color: white;
