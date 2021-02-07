@@ -98,3 +98,27 @@ body{
     border-radius: 50%;
     background-color: white;
 }
+#values{
+    padding-top: 30px;
+    text-align: center;
+}
+.values{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.value{
+    width: 250px;
+    margin: 20px;
+    padding: 10px;
+}
+.green{
+    background-color: green;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
