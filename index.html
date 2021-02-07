@@ -13,7 +13,7 @@
 
     <!-- bostrap cdn -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <title>Confirmation test</title>
+    <title>Screening solution Frontend</title>
 
     <!-- internal css -->
     <link rel="stylesheet" href="index.css">
@@ -52,6 +52,8 @@
                 <div class="text">
                    THIS IS A PLACE WHERE TECHNOLOGY & CREATIVITY FUSED IN TO DIGITAL CHEMISTRY           
                      </div>
+                     <div class="circle1"></div>
+                     <div class="circle2"></div>
     </div>
 
     <section id="values">
@@ -103,7 +105,9 @@
             $(".arrow").click(function(){
                 $(".image1").css("marginLeft", "-100%")
                 $(".image2").css("marginLeft", "-100%") 
-                $(".text").text("WE DONT HAVE THE BEST TEAM BUT WE HAVE THE GREATEST TEAM")    
+                $(".text").text("WE DONT HAVE THE BEST TEAM BUT WE HAVE THE GREATEST TEAM")  
+                $(".circle1").css("backgroundColor", "black") 
+                $(".circle2").css("backgroundColor", "white")   
             }) 
             $(".arrow1").click(function(){
                 $(".image3").css("display", "block")
@@ -111,7 +115,8 @@
                 $(".image1").css("marginLeft", "100%")
                 $(".image2").css("marginLeft", "200%")
                 $(".text").text("THIS IS A PLACE WHERE TECHNOLOGY & CREATIVITY FUSED IN TO DIGITAL CHEMISTRY")
-                console.log($(".text").text())
+                $(".circle1").css("backgroundColor", "white") 
+                $(".circle2").css("backgroundColor", "black")   
         })
         })
     </script>

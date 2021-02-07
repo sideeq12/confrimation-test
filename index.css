@@ -97,7 +97,7 @@ body{
     position: absolute;
     font-size: 20px;
     bottom: 3%;
-    left: 15%;
+    left: 10%;
     background-color: rgba(0, 0, 0, 0.555);
     color: white;
 }
@@ -212,6 +212,22 @@ textarea{
     border-bottom: 15px solid transparent; 
     border-left: 15px solid #104d42;
     margin-left: -20px;
+  }
+  .circle1, .circle2{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+  }
+  .circle1{
+      bottom: 1%;
+      left: 50%;
+      background-color: white;
+  }
+  .circle2{
+      bottom: 1%;
+      left: 52%;
+      border: 1px solid white;
   }
   
 
