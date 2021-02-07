@@ -7,6 +7,10 @@
     <!-- Jquery cdn -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
     <!-- bostrap cdn -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>Confirmation test</title>
@@ -17,6 +21,8 @@
 <body>
     <div class="menu">
      <nav>Company</nav>
+     <input type="checkbox" name="check" class="checkbox" id="">
+     <label for="checkbox"><i class="fas fa-bars burger"></i></label>
      <ul>
          <li>About</a>
             <div class="sub-menu">
@@ -36,11 +42,12 @@
     <!-- slideshow -->
     <div class="slideshow">
         <div class="images">
+            <div class="slide"><img src="images/about-bg.jpg" alt="" class="image3"></div>
             <div class="slide"><img src="images/bg.jpg" alt="" class="image1"></div>
             <div class="slide"><img src="images/about-bg.jpg" alt="" class="image2"></div>
         </div>
                 <div class="arrow">></div>
-                <div class="arrow1">< </div>
+                <div class="arrow1"><</div>
 
                 <div class="text">
                    THIS IS A PLACE WHERE TECHNOLOGY & CREATIVITY FUSED IN TO DIGITAL CHEMISTRY           
@@ -54,12 +61,16 @@
                 <img src="images/lightbulb-o.png" alt="" class="icon">
                 <h5>INNOVATIVE</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-            </div>
+            </div> <div class="triangle">
+                <div class="arrow-right1"></div>
+                            </div>
             <div class="value green">
                 <img src="images/bank.png" alt="" class="icon">
                 <h5>LOYALTY</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
-            </div>
+            </div><div class="triangle">
+                <div class="arrow-right"></div>
+                            </div>
             <div class="value blue">
                 <img src="images/balance-scale.png" alt="" class="icon">
                 <h5>RESPECT</h5>
@@ -91,9 +102,16 @@
         $(document).ready(function(){
             $(".arrow").click(function(){
                 $(".image1").css("marginLeft", "-100%")
-                $(".image2").css("marginLeft", "-100%") }) 
+                $(".image2").css("marginLeft", "-100%") 
+                $(".text").text("WE DONT HAVE THE BEST TEAM BUT WE HAVE THE GREATEST TEAM")    
+            }) 
             $(".arrow1").click(function(){
-                
+                $(".image3").css("display", "block")
+                $(".image3").css("marginLeft", "0%")
+                $(".image1").css("marginLeft", "100%")
+                $(".image2").css("marginLeft", "200%")
+                $(".text").text("THIS IS A PLACE WHERE TECHNOLOGY & CREATIVITY FUSED IN TO DIGITAL CHEMISTRY")
+                console.log($(".text").text())
         })
         })
     </script>
